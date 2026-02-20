@@ -334,7 +334,7 @@ export default function MainContent({ onAddToCart, onDecrementFromCart, cartItem
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
           <div>
             <h1 className="text-2xl md:text-3xl font-medium text-white tracking-tight mb-1">
-              {"Охаё, "}<span className="text-zinc-500">Александр</span>
+              <span className="text-zinc-500">Александр</span>
             </h1>
             <p className="text-sm text-zinc-500">Что будем заказывать сегодня?</p>
           </div>

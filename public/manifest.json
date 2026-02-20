@@ -1,6 +1,6 @@
 {
-  "name": "Sakura - Sushi Delivery",
-  "short_name": "Sakura",
+  "name": "Sushi - Sushi Delivery",
+  "short_name": "Sushi",
   "description": "Premium sushi delivery service",
   "start_url": "/",
   "display": "standalone",

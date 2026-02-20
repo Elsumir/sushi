@@ -25,7 +25,7 @@ export default function MobileSidebar({ isOpen, onClose, activeView, onChangeVie
           <div className="w-10 h-10 bg-rose-500 rounded-lg flex items-center justify-center">
             <span className="text-lg font-bold">🌸</span>
           </div>
-          <span className="text-lg font-bold tracking-wide text-white">SAKURA</span>
+          <span className="text-lg font-bold tracking-wide text-white">Sushi</span>
         </div>
 
         <nav className="space-y-2 flex-1">

@@ -19,7 +19,7 @@ export default function MobileHeader({ onMenuClick, onCartClick, itemCount }: Mo
         <div className="w-8 h-8 bg-zinc-100 rounded-full flex items-center justify-center text-zinc-950">
           <span className="text-lg font-bold">🌸</span>
         </div>
-        <span className="text-lg font-medium tracking-tight text-white">SAKURA</span>
+        <span className="text-lg font-medium tracking-tight text-white">Sushi</span>
       </div>
 
       <button onClick={onCartClick} className="relative p-2 hover:bg-zinc-900 rounded-lg transition-colors">

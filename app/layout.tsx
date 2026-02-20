@@ -17,14 +17,14 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Sakura | Sushi Delivery",
+  title: "Sushi | Sushi Delivery",
   description: "Premium sushi delivery service",
   generator: "v0.app",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "Sakura",
+    title: "Sushi",
   },
   icons: {
     icon: [

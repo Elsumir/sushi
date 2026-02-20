@@ -19,7 +19,7 @@ export default function DesktopSidebar({ activeView, onChangeView }: DesktopSide
           <div className="w-8 h-8 bg-zinc-100 rounded-lg flex items-center justify-center text-zinc-950 shadow-lg shadow-zinc-100/10">
             <span className="text-lg font-bold">🌸</span>
           </div>
-          <span className="text-xl font-medium tracking-tight text-white hidden lg:block">SAKURA</span>
+          <span className="text-xl font-medium tracking-tight text-white hidden lg:block">Sushi</span>
         </div>
 
         <nav className="space-y-1">

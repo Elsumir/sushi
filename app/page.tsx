@@ -1,17 +1,35 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import MobileHeader from "@/components/mobile-header"
 import DesktopSidebar from "@/components/desktop-sidebar"
 import MainContent from "@/components/main-content"
 import CartSidebar from "@/components/cart-sidebar"
 import MobileSidebar from "@/components/mobile-sidebar"
 
+const SECTION_MENU = "menu"
+const SECTION_CART = "cart"
+const SECTION_HISTORY = "history"
+
+function getInitialSection(): typeof SECTION_MENU | typeof SECTION_CART | typeof SECTION_HISTORY {
+  if (typeof window === "undefined") return SECTION_MENU
+  const params = new URLSearchParams(window.location.search)
+  const section = (params.get("section") ?? "").toLowerCase()
+  if (section === SECTION_CART || section === SECTION_HISTORY) return section
+  return SECTION_MENU
+}
+
 export default function Home() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [cartOpen, setCartOpen] = useState(false)
   const [favorites, setFavorites] = useState<number[]>([])
   const [activeView, setActiveView] = useState<"menu" | "favorites" | "history">("menu")
+
+  useEffect(() => {
+    const section = getInitialSection()
+    if (section === SECTION_CART) setCartOpen(true)
+    if (section === SECTION_HISTORY) setActiveView("history")
+  }, [])
 
   const toggleFavorite = (id: number) => {
     setFavorites((prev) =>

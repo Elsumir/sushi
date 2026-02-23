@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import PWARegister from "@/components/pwa-register"
+import VKInit from "@/components/vk-init"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
@@ -55,6 +56,7 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         {children}
         <PWARegister />
+        <VKInit />
         <Analytics />
       </body>
     </html>
